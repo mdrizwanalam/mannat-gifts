@@ -46,7 +46,7 @@ const Header = () => {
                     data-mdb-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Category
                   </a>
                   <ul
                     className="dropdown-menu"
