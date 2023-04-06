@@ -85,7 +85,7 @@ const Header = () => {
                     type="search"
                     id="form1"
                     className="form-control"
-                    placeholder="Give Your Loved Once"
+                    placeholder="Search For Your Loved Once"
                   />
                 </div>
                 {/* <button type="button" className="btn btn-primary">
