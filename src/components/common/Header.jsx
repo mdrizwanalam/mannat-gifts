@@ -3,11 +3,20 @@ import React from "react";
 const Header = () => {
   return (
     <>
+      {/* <header>
+        <div className="row">
+          <div className="col">
+            <a className="logo-wrapper">
+              <img alt="logo" src="/assets/images/mannat-gifts-logo.png" />
+            </a>
+          </div>
+        </div>
+      </header> */}
       <section className="border p-4 mb-4 d-flex align-items-center flex-column">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              Brand 
+              Brand
             </a>
 
             <button
@@ -34,7 +43,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                    Link
+                    Gifts
                   </a>
                 </li>
                 <li className="nav-item dropdown">
@@ -88,9 +97,6 @@ const Header = () => {
                     placeholder="Search For Your Loved Once"
                   />
                 </div>
-                {/* <button type="button" className="btn btn-primary">
-                  <i className="fas fa-search"></i>
-                </button> */}
               </div>
             </div>
           </div>
