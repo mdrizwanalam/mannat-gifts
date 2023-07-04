@@ -1,0 +1,44 @@
+.home_page_wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fdecef;
+  .header_Wrapper {
+    .header_container {
+      justify-content: space-around;
+      display: flex;
+      height: auto;
+      align-items: center;
+      flex-wrap: wrap;
+      .search_block {
+        .search {
+          display: inline-block;
+        }
+        .search_icon {
+          position: relative;
+          right: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .home_Wrapper {
+    margin-top: 10px;
+    .home_container {
+      justify-content: space-around;
+      display: flex;
+      height: auto;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .home_container {
+      .product_item:hover {
+        transform: scale(1.1);
+        transition: all linear 200ms;
+        z-index: 1;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+      }
+    }
+  }
+}
