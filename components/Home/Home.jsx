@@ -8,8 +8,8 @@ const Home = () => {
   var [data, setData] = useState([]);
 
   useEffect(() => {
-    // callAPI();
-  });
+    callAPI();
+  },[0]);
 
   let array = [
     {
