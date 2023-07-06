@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="Group_8611" data-name="Group 8611" transform="translate(-0.484)">
+    <g id="Ellipse_22" data-name="Ellipse 22" transform="translate(0.484)" fill="rgba(236,241,244,0.4)" stroke="#ecf1f4" stroke-width="1">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="20.5" fill="none"/>
+    </g>
+    <path id="bxl-telegram" d="M18.379,5.5,3.77,11.134c-1,.4-.991.957-.183,1.2l3.751,1.17,8.678-5.475c.41-.25.785-.115.477.158L9.462,14.537h0L9.2,18.4a.976.976,0,0,0,.759-.379l1.822-1.772,3.79,2.8c.7.385,1.2.187,1.374-.647L19.435,6.682c.255-1.021-.39-1.483-1.056-1.182Z" transform="translate(8.071 8.757)" fill="#0d1936"/>
+  </g>
+</svg>

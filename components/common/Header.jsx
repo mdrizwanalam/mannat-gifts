@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
-import LogoImage from "../../public/images/mg-logo.png";
+import LogoImage from "../../public/images/logo.svg";
 
 const Header = () => {
   return (

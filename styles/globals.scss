@@ -1,3 +1,18 @@
+//   =============== Color Code==================
+$themeBlack: #364446;
+$blueButton: linear-gradient(61deg, #3ac3ff 0%, #2aaee8 100%);
+$themeBlue: #3ac3ff;
+$blueGradient: linear-gradient(67deg, #3ac3ff 0%, #2aaee8 100%);
+$placeholderColor: rgba(24, 41, 41, 0.4);
+$themeGreen: #6fc85d;
+$sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
+
+.custom_container {
+  max-width: 1513px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .home_page_wrapper {
   height: 100%;
   margin: 0;
@@ -23,19 +38,23 @@
     }
   }
   .home_Wrapper {
-    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     .home_container {
       display: flex;
       flex-wrap: wrap;
-      // grid-template-columns: repeat(5, 1fr);
       gap: 1rem;
       .product_item {
+        background-color: white;
+        border-radius: 10px;
         max-width: 200px;
         cursor: pointer;
         border: 1px solid black;
+        overflow: hidden;
         .product_image img {
-          height: 100%;
-          width: 100%;
+          height: 200px;
+          width: 200px;
+          object-fit: cover;
         }
         .product_details {
           padding: 10px;
@@ -60,4 +79,96 @@
       cursor: pointer;
     }
   }
+  // ===========Footer ========================
+  .footer_wrapper {
+    .footer {
+      background: rgb(255, 255, 255);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-top: 1px solid #edededdd;
+      padding: 30px 0;
+      .footer_widget {
+        .footer_logo {
+          img {
+            width: 140px;
+          }
+        }
+        p {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 1.7;
+          color: $themeBlack;
+          margin-bottom: 23px;
+        }
+        .social_icons {
+          margin-bottom: 70px;
+          li {
+            display: inline-block;
+            + li {
+              margin-left: 10px;
+            }
+            a {
+              display: inline-block;
+              img {
+                width: 35px;
+              }
+            }
+          }
+        }
+        p.copright_text {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+      h4 {
+        font-size: 17px;
+        color: $themeBlack;
+        margin-bottom: 30px;
+      }
+      .social_links {
+        padding-left: 0;
+        li {
+          a {
+            color: $themeBlack;
+            font-weight: 400;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 14px;
+            text-transform: capitalize;
+          }
+        }
+      }
+      h5 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 2.3;
+        color: $themeBlack;
+        + h5 {
+          margin-bottom: 30px;
+        }
+      }
+      .download_app {
+        h4 {
+          margin-bottom: 20px;
+        }
+        .app_images {
+          a {
+            display: inline-block;
+            img {
+              width: 120px;
+              cursor: pointer;
+            }
+            + a {
+              margin-left: 15px;
+              img {
+                height: 38px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ===========Footer ========================
 }
