@@ -148,26 +148,26 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
           margin-bottom: 30px;
         }
       }
-      .download_app {
-        h4 {
-          margin-bottom: 20px;
-        }
-        .app_images {
-          a {
-            display: inline-block;
-            img {
-              width: 120px;
-              cursor: pointer;
-            }
-            + a {
-              margin-left: 15px;
-              img {
-                height: 38px;
-              }
-            }
-          }
-        }
-      }
+      // .download_app {
+      //   h4 {
+      //     margin-bottom: 20px;
+      //   }
+      //   .app_images {
+      //     a {
+      //       display: inline-block;
+      //       img {
+      //         width: 120px;
+      //         cursor: pointer;
+      //       }
+      //       + a {
+      //         margin-left: 15px;
+      //         img {
+      //           height: 38px;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
     }
   }
   // ===========Footer ========================
