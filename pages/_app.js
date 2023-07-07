@@ -1,3 +1,7 @@
+// import Font Awesome CSS
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 import Head from "next/head";
 import "../styles/globals.scss";
 import "../styles/globals.responsive.scss"

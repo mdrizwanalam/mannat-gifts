@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
-import mgLogo from "../../public/images/logo.svg"
+import mgLogo from "../../public/images/mg-logo.png"
 import instaLogo from "../../public/images/insta.svg"
 import ytLogo from "../../public/images/yt.svg"
 import fb from "../../public/images/fb.svg"
@@ -21,7 +21,7 @@ const Footer = () => {
                     <p><b>Mannat Gifts</b> brings you the best gifts that helps you to show your love to your loved ones and to bring happy moments.</p>
                     <ul type="none" className="social_icons">
                         <li><a href="https://www.instagram.com/mannat.gifts/" target="_blank"><Image src={instaLogo} alt="insta" className="img-fluid" /></a></li>
-                        <li><a href="#" target="_blank"><Image src={ytLogo} alt="yt" className="img-fluid" /></a></li>
+                        <li><a href="https://youtube.com/@mannatgifts" target="_blank"><Image src={ytLogo} alt="yt" className="img-fluid" /></a></li>
                         <li><a href="https://www.facebook.com/giftsmannat/" target="_blank"><Image src={fb} alt="fb" className="img-fluid" /></a></li>
                         <li><a href="#" target="_blank"><Image src={tgLogo} alt="telegram" className="img-fluid" /></a></li>
                         <li><a href="#" target="_blank"><Image src={twLogo} alt="twitter" className="img-fluid" /></a></li>

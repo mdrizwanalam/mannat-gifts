@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="header_Wrapper">
           <Header />
         </div>
-        <hr />
+        <hr className="horizontal_line"/>
         <div className="home_Wrapper">
           <Home />
         </div>
