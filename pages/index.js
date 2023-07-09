@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <Fragment>
       <Head>
-        <title>Mannat Gifts</title>
+        <title>Mannat Gifts : Buy Best Gifts For Your Loved ones </title>
       </Head>
       <div className="home_page_wrapper">
         <div className="header_Wrapper">

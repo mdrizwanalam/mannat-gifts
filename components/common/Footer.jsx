@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
-import mgLogo from "../../public/images/mg-logo.png"
-import instaLogo from "../../public/images/insta.svg"
-import ytLogo from "../../public/images/yt.svg"
-import fb from "../../public/images/fb.svg"
-import twLogo from "../../public/images/tw.svg"
-import tgLogo from "../../public/images/telegram.svg"
+import mgLogo from "../../public/icons/mg-logo.png"
+import instaLogo from "../../public/icons/insta.svg"
+import ytLogo from "../../public/icons/yt.svg"
+import fb from "../../public/icons/fb.svg"
+import twLogo from "../../public/icons/tw.svg"
+import tgLogo from "../../public/icons/telegram.svg"
 
 
 const Footer = () => {
@@ -66,10 +66,10 @@ const Footer = () => {
                     <h4>Download the App</h4>
                     <div className="app_images">
                         <a href="https://play.google.com/store/apps/details?id=com.egurukulapp&hl=en_IN&gl=US" target="_blank">
-                            <img src="assets/images/play_store.svg" alt="Android" className="img-fluid" />
+                            <img src="assets/icons/play_store.svg" alt="Android" className="img-fluid" />
                         </a>
                         <a href="https://apps.apple.com/in/app/egurukul/id1491444366" target="_blank">
-                            <img src="assets/images/app_store.svg" alt="Apple" className="img-fluid" />
+                            <img src="assets/icons/app_store.svg" alt="Apple" className="img-fluid" />
                         </a>
                     </div>
                 </div> */}

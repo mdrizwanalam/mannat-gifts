@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Web site created using create-react-app"
+          content="Mannat Gifts Helps You To Complete Your Wish(Mannat) To Make Your Loves Ones Happy By Giving Them Some Beautiful Gifts"
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />

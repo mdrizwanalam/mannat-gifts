@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
-import LogoImage from "../../public/images/mg-logo.png";
+import LogoImage from "../../public/icons/mg-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 

@@ -17,6 +17,11 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
   padding: 0;
 }
 
+.caraousel_image{
+  width: 100%;
+  height: auto;
+}
+
 .home_page_wrapper {
   height: 100%;
   margin: 0;
@@ -60,7 +65,10 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
   .home_Wrapper {
     padding-bottom: 20px;
     padding-top: 10px;
-    .home_container {
+    .caraousel_wrapper{
+      padding: 20px 0;
+    }
+    .product_list_wrapper {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
@@ -91,13 +99,13 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
       }
     }
 
-    .product_item:hover {
-      transform: scale(1.1);
-      transition: all linear 200ms;
-      z-index: 1;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-    }
+    // .product_item:hover {
+    //   transform: scale(1.1);
+    //   transition: all linear 200ms;
+    //   z-index: 1;
+    //   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    //   cursor: pointer;
+    // }
   }
   // ===========Footer ========================
   .footer_wrapper {
