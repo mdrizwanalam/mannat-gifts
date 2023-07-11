@@ -1,5 +1,5 @@
 @media only screen and (max-width: 400px) {
-  .home_page_wrapper {
+  .main_wrapper {
     .header_Wrapper {
       .header_container {
         display: flex;
@@ -32,6 +32,9 @@
           }
         }
       }
+    }
+    .about_us_wrapper {
+      padding: 10px;
     }
   }
 }

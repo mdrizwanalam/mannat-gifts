@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../../styles/Home.module.scss";
 import { useState } from "react";
 import { useEffect } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import car1 from "../../public/images/caraousel-1.png"
-import car2 from "../../public/images/image3.png"
-import car3 from "../../public/images/pen_stand4.jpg"
-
+import car1 from "../../public/images/caraousel-1.png";
+import car2 from "../../public/images/image3.png";
+import car3 from "../../public/images/pen_stand4.jpg";
 
 const Home = () => {
   var [data, setData] = useState([]);
@@ -23,6 +21,18 @@ const Home = () => {
   }, [0]);
 
   let array = [
+    {
+      title: "Gift Box For Friemd",
+      url: "https://www.fnp.com/images/pr/l/v20220706124810/love-for-pastel-carnations-bouquet_1.jpg",
+      discountedPrice: 1200,
+      originalPrice: 1500,
+    },
+    {
+      title: "A Cup of Wine With Some Gifts",
+      url: "https://www.fnp.com/images/pr/l/v20221209121243/personalised-floral-flask-with-temperature-display_1.jpg",
+      discountedPrice: 1100,
+      originalPrice: 1250,
+    },
     {
       title: "Gift Box For Friemd",
       url: "https://www.fnp.com/images/pr/l/v20220706124810/love-for-pastel-carnations-bouquet_1.jpg",
@@ -98,7 +108,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="home_Wrapper">
       <div className="caraousel_wrapper">
         <Carousel activeIndex={index} onSelect={handleSelect} interval="1000">
           <Carousel.Item>
@@ -118,7 +128,6 @@ const Home = () => {
               src={car2}
               alt="Second slide"
             />
-
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -165,7 +174,7 @@ const Home = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

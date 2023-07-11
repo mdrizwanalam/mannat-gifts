@@ -12,22 +12,25 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
   margin: 0 auto;
   padding: 0 30px;
 }
-.horizontal_line{
+.horizontal_line {
   margin: 0;
   padding: 0;
 }
 
-.caraousel_image{
+.caraousel_image {
   width: 100%;
   height: auto;
+  max-height: 600px;
 }
 
-.home_page_wrapper {
+.main_wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fdecef;
+  background-color: #fff;
   .header_Wrapper {
+    border-bottom: 1px solid;
+    background-color: #fdecef;
     .header_container {
       padding: 0 50px;
       justify-content: space-between;
@@ -35,8 +38,8 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
       height: auto;
       align-items: center;
       flex-wrap: wrap;
-      .logo_block{
-        .mannat_logo{
+      .logo_block {
+        .mannat_logo {
           cursor: pointer;
         }
       }
@@ -63,10 +66,11 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
     }
   }
   .home_Wrapper {
+    background-color: #fdecef;
     padding-bottom: 20px;
     padding-top: 10px;
-    .caraousel_wrapper{
-      padding: 20px 0;
+    .caraousel_wrapper {
+      padding-bottom: 10px;
     }
     .product_list_wrapper {
       display: flex;
@@ -107,10 +111,11 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
     //   cursor: pointer;
     // }
   }
-  // ===========Footer ========================
   .footer_wrapper {
+    border-top: 1px solid;
+    background-color: #fdecef;
     .footer {
-      background: rgb(255, 255, 255);
+      // background: rgb(255, 255, 255);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -198,5 +203,16 @@ $sidebarBg: linear-gradient(148deg, #f2fafe00 0%, #f2fafe 1%);
       // }
     }
   }
-  // ===========Footer ========================
+  .about_us_wrapper {
+    background-color: #fdecef;
+    text-align: center;
+    display: grid;
+    padding: 0 500px;
+    h1 {
+      padding: 20px 0;
+    }
+    p {
+      text-align: left;
+    }
+  }
 }

@@ -6,7 +6,7 @@ import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <Fragment>
+    <div className="header_Wrapper">
       <header>
         <div className="header_container">
           <div className="logo_block block">
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </Fragment>
+    </div>
   );
 };
 

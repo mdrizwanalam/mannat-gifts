@@ -6,8 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="theme-color" content="#000000" />
-        <meta
-          name="description"
+        <meta name="description"
           content="Mannat Gifts Helps You To Complete Your Wish(Mannat) To Make Your Loves Ones Happy By Giving Them Some Beautiful Gifts"
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
