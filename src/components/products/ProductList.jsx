@@ -1,26 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import { useState } from "react";
-import { useEffect } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import car1 from "../../public/images/caraousel-1.png";
-import car2 from "../../public/images/image3.png";
-import car3 from "../../public/images/pen_stand4.jpg";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+// import Image from "next/image";
+// import { useRouter } from "next/router";
 
-const Home = () => {
+const ProductList = () => {
   var [data, setData] = useState([]);
+  let navigate = useNavigate();
 
-  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
-
-  useEffect(() => {
-    callAPI();
-  }, [0]);
-
-  let array = [
+  const array = [
     {
       title: "Gift Box For Friemd",
       url: "https://www.fnp.com/images/pr/l/v20220706124810/love-for-pastel-carnations-bouquet_1.jpg",
@@ -95,6 +83,10 @@ const Home = () => {
     },
   ];
 
+  useEffect(() => {
+    callAPI();
+  }, [0]);
+
   const callAPI = async () => {
     try {
       let res = await fetch(`https://jsonplaceholder.typicode.com/photos`);
@@ -108,74 +100,32 @@ const Home = () => {
   };
 
   return (
-    <div className="home_Wrapper">
-      <div className="caraousel_wrapper">
-        <Carousel activeIndex={index} onSelect={handleSelect} interval="1000">
-          <Carousel.Item>
-            <Image
-              className="d-block w-100 caraousel_image"
-              src={car1}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image
-              className="d-block w-100 h-20 caraousel_image"
-              src={car2}
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Image
-              className="d-block w-100 h-20 caraousel_image"
-              src={car3}
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="product_list_wrapper container">
-        {array.map((obj, i) => {
-          return (
-            <div key={i} className="product_item">
-              <div className="product_image">
-                <Image
-                  src={obj.url}
-                  width={100}
-                  height={70}
-                  alt="mannat logo"
-                />
-              </div>
-              <div className="product_details">
-                <div className="product_title">{obj.title}</div>
-                <span className="product_discounted_price">
-                  &#8377;{obj.discountedPrice}
-                </span>
-                <span className="product_original_price">
-                  &#8377;<del>{obj.originalPrice}</del>
-                </span>
-              </div>
+    <div className="product_list_wrapper container">
+      {array.map((obj, i) => {
+        return (
+          <div
+            key={i}
+            className="product_item"
+            onClick={() => {
+              navigate("/products/red-mug-for-wife");
+            }}
+          >
+            <div className="product_image">
+              <img src={obj.url} width={100} height={70} alt="mannat logo" />
             </div>
-          );
-        })}
-      </div>
+            <div className="product_details">
+              <div className="product_title">{obj.title}</div>
+              <span className="product_discounted_price">
+                &#8377;{obj.discountedPrice}
+              </span>
+              <span className="product_original_price">
+                &#8377;<del>{obj.originalPrice}</del>
+              </span>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
-
-export default Home;
+export default ProductList;

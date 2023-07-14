@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React, { Fragment } from "react";
-import LogoImage from "../../public/icons/mg-logo.png";
+import React from "react";
+import Logo from "../../assets/icons/mg-logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,15 +10,11 @@ const Header = () => {
       <header>
         <div className="header_container">
           <div className="logo_block block">
-            <a className="mannat_logo">
+            <Link to="/" className="mannat_logo">
               <figure className="footer_logo">
-                <Image
-                  src={LogoImage}
-                  alt="Footer_logo"
-                  className="img-fluid"
-                />
+                <img src={Logo} alt="HeaderLogo" className="img-fluid" />
               </figure>
-            </a>
+            </Link>
           </div>
           <div className="search_block block">
             <div className="search search_input">
@@ -43,18 +39,18 @@ const Header = () => {
             </div>
           </div>
           <div className="menu_block block">
-              <a>
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  size="xl"
-                  style={{ color: "black" }}
-                ></FontAwesomeIcon>
-                <span>Cart</span>
-              </a>
-              <a>
-                <FontAwesomeIcon icon={faUser} size="xl" />
-                <span>Hi Guest</span>
-              </a>
+            <a>
+              <FontAwesomeIcon
+                icon={faCartShopping}
+                size="xl"
+                style={{ color: "black" }}
+              ></FontAwesomeIcon>
+              <span>Cart</span>
+            </a>
+            <a>
+              <FontAwesomeIcon icon={faUser} size="xl" />
+              <span>Hi Guest</span>
+            </a>
           </div>
         </div>
       </header>

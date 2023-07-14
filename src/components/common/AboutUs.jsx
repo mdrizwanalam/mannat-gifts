@@ -1,8 +1,7 @@
-import { Fragment } from "react";
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
     <div className="main_wrapper">
       <Header />
@@ -32,4 +31,6 @@ export default function AboutUs() {
       <Footer />
     </div>
   );
-}
+};
+
+export default AboutUs;

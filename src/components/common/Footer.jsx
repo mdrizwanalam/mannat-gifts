@@ -1,11 +1,11 @@
-import Image from "next/image";
 import React, { Fragment } from "react";
-import mgLogo from "../../public/icons/mg-logo.png";
-import instaLogo from "../../public/icons/insta.svg";
-import ytLogo from "../../public/icons/yt.svg";
-import fb from "../../public/icons/fb.svg";
-import twLogo from "../../public/icons/tw.svg";
-import tgLogo from "../../public/icons/telegram.svg";
+import mgLogo from "../../assets/icons/mg-logo.png";
+import instaLogo from "../../assets/icons/insta.svg";
+import ytLogo from "../../assets/icons/yt.svg";
+import fb from "../../assets/icons/fb.svg";
+import twLogo from "../../assets/icons/tw.svg";
+import tgLogo from "../../assets/icons/telegram.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,9 +15,11 @@ const Footer = () => {
           <div className="row align-items-baseline">
             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
               <aside className="footer_widget first_widget">
+                <Link to="/">
                 <figure className="footer_logo">
-                  <Image src={mgLogo} alt="Footer_logo" className="img-fluid" />
+                  <img src={mgLogo} alt="Footer_logo" className="img-fluid" />
                 </figure>
+                </Link>
                 <p>
                   <b>Mannat Gifts</b> brings you the best gifts that helps you
                   to show your love to your loved ones and to bring happy
@@ -29,7 +31,7 @@ const Footer = () => {
                       href="https://www.instagram.com/mannat.gifts/"
                       target="_blank"
                     >
-                      <Image
+                      <img
                         src={instaLogo}
                         alt="insta"
                         className="img-fluid"
@@ -38,7 +40,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="https://youtube.com/@mannatgifts" target="_blank">
-                      <Image src={ytLogo} alt="yt" className="img-fluid" />
+                      <img src={ytLogo} alt="yt" className="img-fluid" />
                     </a>
                   </li>
                   <li>
@@ -46,12 +48,12 @@ const Footer = () => {
                       href="https://www.facebook.com/giftsmannat/"
                       target="_blank"
                     >
-                      <Image src={fb} alt="fb" className="img-fluid" />
+                      <img src={fb} alt="fb" className="img-fluid" />
                     </a>
                   </li>
                   <li>
                     <a href="#" target="_blank">
-                      <Image
+                      <img
                         src={tgLogo}
                         alt="telegram"
                         className="img-fluid"
@@ -60,7 +62,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="#" target="_blank">
-                      <Image src={twLogo} alt="twitter" className="img-fluid" />
+                      <img src={twLogo} alt="twitter" className="img-fluid" />
                     </a>
                   </li>
                 </ul>
@@ -72,7 +74,7 @@ const Footer = () => {
                 <h4>Company</h4>
                 <ul type="none" className="social_links">
                   <li>
-                    <a href="/about-us">About Us</a>
+                    <Link to="/about-us">About Us</Link>
                   </li>
                   <li>
                     <a href="#">Contact Us</a>
