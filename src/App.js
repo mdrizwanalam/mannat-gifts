@@ -7,7 +7,7 @@ import AboutUs from "./components/common/AboutUs";
 import ProductInfo from "./components/products/ProductInfo";
 
 function App() {
-  return (
+  return ( 
     <Fragment>
       <div className="main_wrapper">
         <Routes>

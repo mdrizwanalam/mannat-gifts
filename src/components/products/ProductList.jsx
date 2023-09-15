@@ -7,7 +7,6 @@ const ProductList = () => {
   var [data, setData] = useState([]);
   let navigate = useNavigate();
 
-
   const array = [
     {
       title: "Gift Box For Friemd",

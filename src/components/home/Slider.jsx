@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 // import Image from "next/image";
 import Carousel from "react-bootstrap/Carousel";
-import car1 from "../../assets/images/caraousel-1.png";
-import car2 from "../../assets/images/image3.png";
-import car3 from "../../assets/images/pen_stand4.jpg";
+import car1 from "../../assets/images/img-5.png";
+import car2 from "../../assets/images/mug2.jpg";
+import car3 from "../../assets/images/mug3.jpg";
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
