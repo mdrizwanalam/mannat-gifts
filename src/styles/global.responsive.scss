@@ -1,12 +1,11 @@
 @media only screen and (max-width: 400px) {
   .main_wrapper {
     .header_Wrapper {
-      // .header_container {
+      background-color: #fdecef;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 0 15px;
-      padding: 0;
+      padding: 0 15px;
       .logo_block {
         margin: 0;
         padding: 0;
@@ -25,7 +24,6 @@
       .menu_block {
         display: none;
       }
-      // }
     }
     .home_Wrapper {
       .product_list_header {
