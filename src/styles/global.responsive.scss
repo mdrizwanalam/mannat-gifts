@@ -1,7 +1,11 @@
+
+$productBackGround : #cce3de;
+
+
 @media only screen and (max-width: 400px) {
   .main_wrapper {
     .header_Wrapper {
-      background-color: #fdecef;
+      background-color: $productBackGround;
       display: flex;
       justify-content: space-between;
       align-items: center;
