@@ -1,10 +1,11 @@
+import { Rating, Typography } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-// import Image from "next/image";
-// import { useRouter } from "next/router";
 
 const ProductList = () => {
   var [data, setData] = useState([]);
+  const [value, setValue] = React.useState(2);
+
   let navigate = useNavigate();
 
   const array = [
@@ -99,32 +100,52 @@ const ProductList = () => {
   };
 
   return (
-    <div className="product_list_wrapper container">
-      {array.map((obj, i) => {
-        return (
-          <div
-            key={i}
-            className="product_item"
-            onClick={() => {
-              navigate("/products/red-mug-for-wife");
-            }}
-          >
-            <div className="product_image">
-              <img src={obj.url} width={100} height={70} alt="mannat logo" />
+    <>
+      <h2 className="product_list_header">Best Selling Gifts :</h2>
+      <div className="product_list_wrapper container">
+        {array.map((obj, i) => {
+          return (
+            <div
+              key={i}
+              className="product_item"
+              onClick={() => {
+                navigate("/products/red-mug-for-wife");
+              }}
+            >
+              <div className="product_image_con_outer">
+                <div className="product_image_con_inner">
+                  <img
+                    src={obj.url}
+                    width={100}
+                    height={70}
+                    alt="mannat logo"
+                  />
+                </div>
+              </div>
+              <div className="product_details">
+                <div className="product_rating">
+                  <Rating size="small"
+                    name="simple-controlled"
+                    value={value}
+                    onChange={(event, newValue) => {
+                      setValue(newValue);
+                    }}
+                  />
+                  <span className="no_reviews_cont">No Reviews</span>
+                </div>
+                <div className="product_title">{obj.title}</div>
+                <span className="product_discounted_price">
+                  &#8377;{obj.discountedPrice}
+                </span>
+                <span className="product_original_price">
+                  &#8377;<del>{obj.originalPrice}</del>
+                </span>
+              </div>
             </div>
-            <div className="product_details">
-              <div className="product_title">{obj.title}</div>
-              <span className="product_discounted_price">
-                &#8377;{obj.discountedPrice}
-              </span>
-              <span className="product_original_price">
-                &#8377;<del>{obj.originalPrice}</del>
-              </span>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 };
 export default ProductList;

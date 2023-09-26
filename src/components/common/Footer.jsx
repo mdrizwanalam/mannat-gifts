@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import mgLogo from "../../assets/icons/mg-logo.png";
+import mgLogo from "../../assets/icons/mg-logo2.png";
 import instaLogo from "../../assets/icons/insta.svg";
 import ytLogo from "../../assets/icons/yt.svg";
 import fb from "../../assets/icons/fb.svg";
