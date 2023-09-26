@@ -66,7 +66,6 @@ const Footer = () => {
                     </a>
                   </li>
                 </ul>
-                <p className="copright_text">Copyright 2023 mannatgifts.com</p>
               </aside>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -123,9 +122,7 @@ const Footer = () => {
               <aside className="footer_widget">
                 <h4>Contact Us</h4>
                 <h5>
-                  +(91) 8447308316
-                  <br />
-                  giftsmannat@gmail.com
+                  +(91) 8447308316 &nbsp; &nbsp; giftsmannat@gmail.com
                 </h5>
                 <h5>
                   Address- Mannat Gifts, Saini Street, Haldoni Village, Greater
@@ -146,6 +143,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="copright_text">Copyright 2023 mannatgifts.com</p>
       </footer>
     </div>
   );

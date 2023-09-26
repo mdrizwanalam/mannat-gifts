@@ -147,7 +147,6 @@ $productBackGround : #cce3de;
       .product_item {
         height: 400px;
         cursor: pointer;
-        background-color: #fff;
         .product_image_con_outer {
           display: grid;
           place-content: center;
@@ -228,10 +227,6 @@ $productBackGround : #cce3de;
             }
           }
         }
-        p.copright_text {
-          font-size: 12px;
-          margin: 0;
-        }
       }
       h4 {
         font-size: 17px;
@@ -259,6 +254,11 @@ $productBackGround : #cce3de;
         + h5 {
           margin-bottom: 30px;
         }
+      }
+      p.copright_text {
+        text-align: center;
+        font-size: 12px;
+        margin: 0;
       }
     }
   }

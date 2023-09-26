@@ -41,10 +41,12 @@ $productBackGround : #cce3de;
           min-height: 300px;
           height: unset;
           .product_image_con_outer {
+            display: flex;
+            align-items: center;
             height: 200px;
             .product_image_con_inner {
-              height: 150px;
-              width: 100px;
+              height: calc(100% - 2rem);
+              width: calc(100% - 2rem);
             }
           }
           .product_details {
@@ -64,6 +66,18 @@ $productBackGround : #cce3de;
               line-height: 28px;
             }
           }
+        }
+      }
+    }
+    .footer_wrapper {
+      background-color: $productBackGround;
+      .footer {
+        h4{
+          margin: 0;
+        }
+        .social_links {
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
         }
       }
     }
